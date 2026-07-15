@@ -65,6 +65,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/ars231106/Leetcode/tree/master/0001-two-sum) |
 | [0051-n-queens](https://github.com/ars231106/Leetcode/tree/master/0051-n-queens) |
+| [0078-subsets](https://github.com/ars231106/Leetcode/tree/master/0078-subsets) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/ars231106/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 ## Hash Table
 |  |
@@ -111,5 +112,10 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0051-n-queens](https://github.com/ars231106/Leetcode/tree/master/0051-n-queens) |
+| [0078-subsets](https://github.com/ars231106/Leetcode/tree/master/0078-subsets) |
 | [0113-path-sum-ii](https://github.com/ars231106/Leetcode/tree/master/0113-path-sum-ii) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0078-subsets](https://github.com/ars231106/Leetcode/tree/master/0078-subsets) |
 <!---LeetCode Topics End-->
