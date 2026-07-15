@@ -1,5 +1,6 @@
 class Solution {
 public:
+//brute - force solution
    /* vector<vector<int>> subsets(vector<int>& nums) {
         vector<vector<int>> ans = {{}};
         
