@@ -6,44 +6,22 @@
  *     TreeNode *right;
  *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
  *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right)
- *         : val(x), left(left), right(right) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
 
 class Solution {
 public:
-    vector<vector<int>> paths;
-
-    void dfs(TreeNode* root, vector<int>& path) {
-        if (root == NULL)
-            return;
-
-        path.push_back(root->val);
-
-        if (root->left == NULL && root->right == NULL) {
-            paths.push_back(path);
-        }
-
-        dfs(root->left, path);
-        dfs(root->right, path);
-
-        path.pop_back();
-    }
-
     bool hasPathSum(TreeNode* root, int targetSum) {
-        vector<int> path;
-        dfs(root, path);
+        if (root == NULL)
+            return false;
 
-        for (auto &v : paths) {
-            int sum = 0;
-            for (int x : v)
-                sum += x;
+        if (root->left == NULL && root->right == NULL)
+            return targetSum == root->val;
 
-            if (sum == targetSum)
-                return true;
-        }
+        targetSum -= root->val;
 
-        return false;
+        return hasPathSum(root->left, targetSum) ||
+               hasPathSum(root->right, targetSum);
     }
 };
