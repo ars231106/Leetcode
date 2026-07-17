@@ -4,7 +4,6 @@ public:
     vector<int> curr;
 
     void solve(vector<int>& candidates, int target, int index){
-        sort(candidates.begin(), candidates.end());
         if(target == 0){
             ans.push_back(curr);
             return;
@@ -26,9 +25,8 @@ public:
         }
     }
     vector<vector<int>> combinationSum2(vector<int>& candidates, int target){
-        
+        sort(candidates.begin(), candidates.end());
         solve(candidates, target, 0);
         return ans;
     }
 };
-                                                                                                                             
