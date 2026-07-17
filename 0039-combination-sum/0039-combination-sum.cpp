@@ -1,28 +1,26 @@
 class Solution {
 public:
     vector<vector<int>> ans;
-
-    void solve(vector<int>& candidates, int target, int index, vector<int>& temp) {
-        if (target == 0) {
-            ans.push_back(temp);
+    vector<int> curr;
+    
+    void solve(vector<int>& candidates, int target, int index){
+        if(target == 0){
+            ans.push_back(curr);
             return;
         }
 
-        if (index == candidates.size() || target < 0)
+        if(target < 0){
             return;
+        }
 
-        // Take current element (can reuse it)
-        temp.push_back(candidates[index]);
-        solve(candidates, target - candidates[index], index, temp);
-        temp.pop_back();
-
-        // Skip current element
-        solve(candidates, target, index + 1, temp);
+        for(int i = index; i<candidates.size(); i++){
+            curr.push_back(candidates[i]);
+            solve(candidates, target - candidates[i], i);
+            curr.pop_back();
+        }
     }
-
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
-        vector<int> temp;
-        solve(candidates, target, 0, temp);
+        solve(candidates, target, 0);
         return ans;
     }
 };
