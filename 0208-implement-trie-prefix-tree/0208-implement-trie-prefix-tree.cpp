@@ -1,38 +1,53 @@
-class Trie {
+class TrieNode{
 public:
-    vector<string> words;
+    TrieNode* child[26];
+    bool end;
 
-    Trie() {
+    TrieNode(){
+        for(int i = 0; i < 26; i++)
+            child[i] = NULL;
+        end = false;
+    }
+};
+
+class Trie{
+public:
+    TrieNode* root;
+
+    Trie(){
+        root = new TrieNode();
     }
 
-    void insert(string word) {
-        words.push_back(word);
-    }
-
-    bool search(string word) {
-        for(string s : words){
-            if(s == word)
-                return true;
+    void insert(string word){
+        TrieNode* node = root;
+        for(char c : word){
+            int index = c - 'a';
+            if(node->child[index] == NULL)
+                node->child[index] = new TrieNode();
+            node = node->child[index];
         }
-        return false;
+        node->end = true;
     }
 
-    bool startsWith(string prefix) {
-        for(string s : words){
-            if(s.size() < prefix.size())
-                continue;
-
-            bool ok = true;
-            for(int i = 0; i < prefix.size(); i++){
-                if(s[i] != prefix[i]){
-                    ok = false;
-                    break;
-                }
-            }
-
-            if(ok)
-                return true;
+    bool search(string word){
+        TrieNode* node = root;
+        for(char c : word){
+            int index = c - 'a';
+            if(node->child[index] == NULL)
+                return false;
+            node = node->child[index];
         }
-        return false;
+        return node->end;
+    }
+
+    bool startsWith(string prefix){
+        TrieNode* node = root;
+        for(char c : prefix){
+            int index = c - 'a';
+            if(node->child[index] == NULL)
+                return false;
+            node = node->child[index];
+        }
+        return true;
     }
 };
