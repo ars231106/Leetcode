@@ -101,11 +101,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/ars231106/Leetcode/tree/master/0022-generate-parentheses) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/ars231106/Leetcode/tree/master/0124-binary-tree-maximum-path-sum) |
 ## String
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/ars231106/Leetcode/tree/master/0013-roman-to-integer) |
+| [0022-generate-parentheses](https://github.com/ars231106/Leetcode/tree/master/0022-generate-parentheses) |
 | [0208-implement-trie-prefix-tree](https://github.com/ars231106/Leetcode/tree/master/0208-implement-trie-prefix-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/ars231106/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 ## Design
@@ -121,6 +123,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Backtracking
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/ars231106/Leetcode/tree/master/0022-generate-parentheses) |
 | [0039-combination-sum](https://github.com/ars231106/Leetcode/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/ars231106/Leetcode/tree/master/0040-combination-sum-ii) |
 | [0046-permutations](https://github.com/ars231106/Leetcode/tree/master/0046-permutations) |
