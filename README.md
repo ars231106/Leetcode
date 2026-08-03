@@ -110,6 +110,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/ars231106/Leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0022-generate-parentheses](https://github.com/ars231106/Leetcode/tree/master/0022-generate-parentheses) |
+| [0072-edit-distance](https://github.com/ars231106/Leetcode/tree/master/0072-edit-distance) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/ars231106/Leetcode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/ars231106/Leetcode/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/ars231106/Leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
@@ -123,6 +124,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0005-longest-palindromic-substring](https://github.com/ars231106/Leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0013-roman-to-integer](https://github.com/ars231106/Leetcode/tree/master/0013-roman-to-integer) |
 | [0022-generate-parentheses](https://github.com/ars231106/Leetcode/tree/master/0022-generate-parentheses) |
+| [0072-edit-distance](https://github.com/ars231106/Leetcode/tree/master/0072-edit-distance) |
 | [0208-implement-trie-prefix-tree](https://github.com/ars231106/Leetcode/tree/master/0208-implement-trie-prefix-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/ars231106/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0647-palindromic-substrings](https://github.com/ars231106/Leetcode/tree/master/0647-palindromic-substrings) |
