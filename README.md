@@ -102,12 +102,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/ars231106/Leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0022-generate-parentheses](https://github.com/ars231106/Leetcode/tree/master/0022-generate-parentheses) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/ars231106/Leetcode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0746-min-cost-climbing-stairs](https://github.com/ars231106/Leetcode/tree/master/0746-min-cost-climbing-stairs) |
 ## String
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/ars231106/Leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0013-roman-to-integer](https://github.com/ars231106/Leetcode/tree/master/0013-roman-to-integer) |
 | [0022-generate-parentheses](https://github.com/ars231106/Leetcode/tree/master/0022-generate-parentheses) |
 | [0208-implement-trie-prefix-tree](https://github.com/ars231106/Leetcode/tree/master/0208-implement-trie-prefix-tree) |
@@ -146,6 +148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/ars231106/Leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0082-remove-duplicates-from-sorted-list-ii](https://github.com/ars231106/Leetcode/tree/master/0082-remove-duplicates-from-sorted-list-ii) |
 ## Math
 |  |
@@ -155,4 +158,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/ars231106/Leetcode/tree/master/0208-implement-trie-prefix-tree) |
+## Manacher
+|  |
+| ------- |
+| [0005-longest-palindromic-substring](https://github.com/ars231106/Leetcode/tree/master/0005-longest-palindromic-substring) |
 <!---LeetCode Topics End-->
