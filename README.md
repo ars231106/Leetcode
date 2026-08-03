@@ -72,6 +72,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0090-subsets-ii](https://github.com/ars231106/Leetcode/tree/master/0090-subsets-ii) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/ars231106/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0216-combination-sum-iii](https://github.com/ars231106/Leetcode/tree/master/0216-combination-sum-iii) |
+| [0746-min-cost-climbing-stairs](https://github.com/ars231106/Leetcode/tree/master/0746-min-cost-climbing-stairs) |
 ## Hash Table
 |  |
 | ------- |
@@ -103,6 +104,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0022-generate-parentheses](https://github.com/ars231106/Leetcode/tree/master/0022-generate-parentheses) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/ars231106/Leetcode/tree/master/0124-binary-tree-maximum-path-sum) |
+| [0746-min-cost-climbing-stairs](https://github.com/ars231106/Leetcode/tree/master/0746-min-cost-climbing-stairs) |
 ## String
 |  |
 | ------- |
