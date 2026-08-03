@@ -74,6 +74,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0216-combination-sum-iii](https://github.com/ars231106/Leetcode/tree/master/0216-combination-sum-iii) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/ars231106/Leetcode/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0416-partition-equal-subset-sum](https://github.com/ars231106/Leetcode/tree/master/0416-partition-equal-subset-sum) |
+| [0494-target-sum](https://github.com/ars231106/Leetcode/tree/master/0494-target-sum) |
 | [0746-min-cost-climbing-stairs](https://github.com/ars231106/Leetcode/tree/master/0746-min-cost-climbing-stairs) |
 ## Hash Table
 |  |
@@ -109,6 +110,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0124-binary-tree-maximum-path-sum](https://github.com/ars231106/Leetcode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/ars231106/Leetcode/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0416-partition-equal-subset-sum](https://github.com/ars231106/Leetcode/tree/master/0416-partition-equal-subset-sum) |
+| [0494-target-sum](https://github.com/ars231106/Leetcode/tree/master/0494-target-sum) |
 | [0647-palindromic-substrings](https://github.com/ars231106/Leetcode/tree/master/0647-palindromic-substrings) |
 | [0746-min-cost-climbing-stairs](https://github.com/ars231106/Leetcode/tree/master/0746-min-cost-climbing-stairs) |
 ## String
@@ -142,6 +144,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0090-subsets-ii](https://github.com/ars231106/Leetcode/tree/master/0090-subsets-ii) |
 | [0113-path-sum-ii](https://github.com/ars231106/Leetcode/tree/master/0113-path-sum-ii) |
 | [0216-combination-sum-iii](https://github.com/ars231106/Leetcode/tree/master/0216-combination-sum-iii) |
+| [0494-target-sum](https://github.com/ars231106/Leetcode/tree/master/0494-target-sum) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -173,8 +176,10 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0416-partition-equal-subset-sum](https://github.com/ars231106/Leetcode/tree/master/0416-partition-equal-subset-sum) |
+| [0494-target-sum](https://github.com/ars231106/Leetcode/tree/master/0494-target-sum) |
 ## 0-1 Knapsack
 |  |
 | ------- |
 | [0416-partition-equal-subset-sum](https://github.com/ars231106/Leetcode/tree/master/0416-partition-equal-subset-sum) |
+| [0494-target-sum](https://github.com/ars231106/Leetcode/tree/master/0494-target-sum) |
 <!---LeetCode Topics End-->
