@@ -26,6 +26,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Depth-First Search
 |  |
 | ------- |
+| [0079-word-search](https://github.com/ars231106/Leetcode/tree/master/0079-word-search) |
 | [0098-validate-binary-search-tree](https://github.com/ars231106/Leetcode/tree/master/0098-validate-binary-search-tree) |
 | [0110-balanced-binary-tree](https://github.com/ars231106/Leetcode/tree/master/0110-balanced-binary-tree) |
 | [0111-minimum-depth-of-binary-tree](https://github.com/ars231106/Leetcode/tree/master/0111-minimum-depth-of-binary-tree) |
@@ -71,6 +72,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0046-permutations](https://github.com/ars231106/Leetcode/tree/master/0046-permutations) |
 | [0051-n-queens](https://github.com/ars231106/Leetcode/tree/master/0051-n-queens) |
 | [0078-subsets](https://github.com/ars231106/Leetcode/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/ars231106/Leetcode/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/ars231106/Leetcode/tree/master/0090-subsets-ii) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/ars231106/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0216-combination-sum-iii](https://github.com/ars231106/Leetcode/tree/master/0216-combination-sum-iii) |
@@ -127,6 +129,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0013-roman-to-integer](https://github.com/ars231106/Leetcode/tree/master/0013-roman-to-integer) |
 | [0022-generate-parentheses](https://github.com/ars231106/Leetcode/tree/master/0022-generate-parentheses) |
 | [0072-edit-distance](https://github.com/ars231106/Leetcode/tree/master/0072-edit-distance) |
+| [0079-word-search](https://github.com/ars231106/Leetcode/tree/master/0079-word-search) |
 | [0208-implement-trie-prefix-tree](https://github.com/ars231106/Leetcode/tree/master/0208-implement-trie-prefix-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/ars231106/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0647-palindromic-substrings](https://github.com/ars231106/Leetcode/tree/master/0647-palindromic-substrings) |
@@ -149,6 +152,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0046-permutations](https://github.com/ars231106/Leetcode/tree/master/0046-permutations) |
 | [0051-n-queens](https://github.com/ars231106/Leetcode/tree/master/0051-n-queens) |
 | [0078-subsets](https://github.com/ars231106/Leetcode/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/ars231106/Leetcode/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/ars231106/Leetcode/tree/master/0090-subsets-ii) |
 | [0113-path-sum-ii](https://github.com/ars231106/Leetcode/tree/master/0113-path-sum-ii) |
 | [0216-combination-sum-iii](https://github.com/ars231106/Leetcode/tree/master/0216-combination-sum-iii) |
@@ -205,6 +209,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Matrix
 |  |
 | ------- |
+| [0079-word-search](https://github.com/ars231106/Leetcode/tree/master/0079-word-search) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/ars231106/Leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 ## Directed Acyclic Graph
 |  |
