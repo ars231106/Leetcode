@@ -1,6 +1,7 @@
 class Solution {
 public:
-    vector<string> ans;
+//backtrackig approach I
+   /* vector<string> ans;
 
     void solve(int n, int openused, int opennotclosed, string &curr){
         if(curr.size() == 2 * n){
@@ -19,11 +20,38 @@ public:
             solve(n, openused, opennotclosed - 1, curr);
             curr.pop_back();
         }
+    } */
+
+    void choicebacktrack(int n, int left, int right, vector<string>& ans, string temp){
+        if(left == n && right == n){
+            ans.push_back(temp);
+            return;
+        }
+
+        if(left < n){
+            temp.append(1, '(');
+            choicebacktrack(n, left + 1, right, ans, temp);
+            temp.pop_back();
+        }
+
+        if(left > right){
+            temp.append(1, ')');
+            choicebacktrack(n, left, right + 1, ans, temp);
+            temp.pop_back();
+        }
     }
 
     vector<string> generateParenthesis(int n) {
-        string curr;
+       /* string curr;
         solve(n, 0, 0, curr);
+        return ans; 
+
+        (for backtarcking approach I)
+        */
+
+        vector<string> ans;
+        string temp;
+        choicebacktrack(n, 0, 0, ans, temp);
         return ans;
     }
 };
