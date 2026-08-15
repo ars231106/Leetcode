@@ -22,7 +22,7 @@ public:
         }
     } */
 
-    void choicebacktrack(int n, int left, int right, vector<string>& ans, string temp){
+    void binarybacktrack(int n, int left, int right, vector<string>& ans, string temp){
         if(left == n && right == n){
             ans.push_back(temp);
             return;
@@ -30,13 +30,13 @@ public:
 
         if(left < n){
             temp.append(1, '(');
-            choicebacktrack(n, left + 1, right, ans, temp);
+            binarybacktrack(n, left + 1, right, ans, temp);
             temp.pop_back();
         }
 
         if(left > right){
             temp.append(1, ')');
-            choicebacktrack(n, left, right + 1, ans, temp);
+            binarybacktrack(n, left, right + 1, ans, temp);
             temp.pop_back();
         }
     }
@@ -51,7 +51,7 @@ public:
 
         vector<string> ans;
         string temp;
-        choicebacktrack(n, 0, 0, ans, temp);
+        binarybacktrack(n, 0, 0, ans, temp);
         return ans;
     }
 };
