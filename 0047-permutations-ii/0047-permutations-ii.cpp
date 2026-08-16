@@ -6,19 +6,15 @@ public:
             return;
         }
 
-        unordered_set<int> used;
+        vector<bool> used(21, false);
 
         for(int i = index; i<nums.size(); i++){
-            if(used.count(nums[i])){
-                continue;
+            if(used[nums[i] + 10] == false){
+                swap(nums[i], nums[index]);
+                permutations(nums, index + 1, ans);
+                swap(nums[i], nums[index]);
+                used[nums[i] + 10] = true;
             }
-            
-            used.insert(nums[i]);
-
-            swap(nums[i], nums[index]);
-            permutations(nums, index + 1, ans);
-            swap(nums[i], nums[index]);
-            
         }
     }
 
