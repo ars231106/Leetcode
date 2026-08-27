@@ -189,6 +189,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0013-roman-to-integer](https://github.com/ars231106/Leetcode/tree/master/0013-roman-to-integer) |
 | [0050-powx-n](https://github.com/ars231106/Leetcode/tree/master/0050-powx-n) |
+| [0060-permutation-sequence](https://github.com/ars231106/Leetcode/tree/master/0060-permutation-sequence) |
 | [0070-climbing-stairs](https://github.com/ars231106/Leetcode/tree/master/0070-climbing-stairs) |
 | [0509-fibonacci-number](https://github.com/ars231106/Leetcode/tree/master/0509-fibonacci-number) |
 ## Trie
@@ -241,6 +242,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0050-powx-n](https://github.com/ars231106/Leetcode/tree/master/0050-powx-n) |
+| [0060-permutation-sequence](https://github.com/ars231106/Leetcode/tree/master/0060-permutation-sequence) |
 | [0509-fibonacci-number](https://github.com/ars231106/Leetcode/tree/master/0509-fibonacci-number) |
 ## Sorting
 |  |
