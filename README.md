@@ -68,6 +68,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/ars231106/Leetcode/tree/master/0001-two-sum) |
 | [0039-combination-sum](https://github.com/ars231106/Leetcode/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/ars231106/Leetcode/tree/master/0040-combination-sum-ii) |
+| [0042-trapping-rain-water](https://github.com/ars231106/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/ars231106/Leetcode/tree/master/0045-jump-game-ii) |
 | [0046-permutations](https://github.com/ars231106/Leetcode/tree/master/0046-permutations) |
 | [0047-permutations-ii](https://github.com/ars231106/Leetcode/tree/master/0047-permutations-ii) |
@@ -117,6 +118,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/ars231106/Leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0022-generate-parentheses](https://github.com/ars231106/Leetcode/tree/master/0022-generate-parentheses) |
+| [0042-trapping-rain-water](https://github.com/ars231106/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/ars231106/Leetcode/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/ars231106/Leetcode/tree/master/0055-jump-game) |
 | [0072-edit-distance](https://github.com/ars231106/Leetcode/tree/master/0072-edit-distance) |
@@ -147,6 +149,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/ars231106/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0144-binary-tree-preorder-traversal](https://github.com/ars231106/Leetcode/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/ars231106/Leetcode/tree/master/0145-binary-tree-postorder-traversal) |
 ## Backtracking
@@ -177,6 +180,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/ars231106/Leetcode/tree/master/0005-longest-palindromic-substring) |
+| [0042-trapping-rain-water](https://github.com/ars231106/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0082-remove-duplicates-from-sorted-list-ii](https://github.com/ars231106/Leetcode/tree/master/0082-remove-duplicates-from-sorted-list-ii) |
 | [0647-palindromic-substrings](https://github.com/ars231106/Leetcode/tree/master/0647-palindromic-substrings) |
 ## Math
@@ -262,4 +266,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/ars231106/Leetcode/tree/master/0022-generate-parentheses) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0042-trapping-rain-water](https://github.com/ars231106/Leetcode/tree/master/0042-trapping-rain-water) |
 <!---LeetCode Topics End-->
