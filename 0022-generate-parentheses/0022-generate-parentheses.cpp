@@ -1,6 +1,6 @@
 class Solution {
 public:
-//backtrackig approach I
+//backtrackig approach I (State based backtracking)
    /* vector<string> ans;
 
     void solve(int n, int openused, int opennotclosed, string &curr){
@@ -41,6 +41,7 @@ public:
         }
     }
 
+//backtrack approach II (binary backtrack)
     vector<string> generateParenthesis(int n) {
        /* string curr;
         solve(n, 0, 0, curr);
