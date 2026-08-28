@@ -35,7 +35,7 @@ public:
             partition--;
         }
 
-        ListNode* p;
+        ListNode* p = NULL;
 
         if(count % 2 == 0){
             p = temp->next;
