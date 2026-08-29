@@ -10,15 +10,13 @@ class Solution {
 public:
     bool hasCycle(ListNode* head) {
         ListNode* temp = head;
-        vector<ListNode*> visited;
+        unordered_map<ListNode*, bool> visited;
 
         while(temp != NULL){
-            for(int i = 0; i<visited.size(); i++) {
-                if(visited[i] == temp){
+                if(visited[temp]){
                     return true;
                 }
-            }
-            visited.push_back(temp);
+            visited[temp] = true;
             temp = temp -> next;
         }
 
