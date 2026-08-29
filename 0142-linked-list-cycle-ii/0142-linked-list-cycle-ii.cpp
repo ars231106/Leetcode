@@ -8,17 +8,30 @@
  */
 class Solution {
 public:
-    ListNode *detectCycle(ListNode *head) {
-        ListNode* temp = head;
-        unordered_map <ListNode*, bool> visited;
-        while(temp != NULL){
-            if(visited[temp]){
-                return temp;
-            }
-            visited[temp] = true;
-            temp = temp -> next;
+    ListNode* detectCycle(ListNode* head) {
+
+        ListNode* slow = head;
+        ListNode* fast = head;
+
+        while(fast != NULL && fast->next != NULL){
+
+            slow = slow->next;
+            fast = fast->next->next;
+
+            if(slow == fast)
+                break;
         }
 
-        return NULL;
+        if(fast == NULL || fast->next == NULL)
+            return NULL;
+
+        slow = head;
+
+        while(slow != fast){
+            slow = slow->next;
+            fast = fast->next;
+        }
+
+        return slow;
     }
 };
