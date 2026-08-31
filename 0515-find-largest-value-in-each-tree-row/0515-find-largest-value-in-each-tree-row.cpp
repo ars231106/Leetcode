@@ -13,21 +13,23 @@ class Solution {
 public:
     vector<int> levelorder(TreeNode* root, vector<int>& ans){
         queue<TreeNode*> q;
-        q.push(root);
-
-        if(root == NULL){
+         if(root == NULL){
             return ans;
         }
 
+        q.push(root);
+        
         while(!q.empty()){
             int size = q.size();
-            vector<int> level;
+            int max = INT_MIN;
 
             for(int i = 0; i<size; i++){
                 TreeNode* temp = q.front();
                 q.pop();
 
-                level.push_back(temp -> val);
+                if(temp -> val > max){
+                    max = temp -> val;
+                }
 
                 if(temp -> left != NULL){
                     q.push(temp -> left);
@@ -38,8 +40,7 @@ public:
                 }
             }
 
-            int maximum = *max_element(level.begin(), level.end());
-            ans.push_back(maximum);
+            ans.push_back(max);
         }
 
         return ans;
