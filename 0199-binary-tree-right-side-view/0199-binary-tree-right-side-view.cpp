@@ -24,25 +24,24 @@ public:
         q.push(root);
 
         while (!q.empty()) {
-            int size = q.size();
+           int size = q.size();
 
-            for (int i = 0; i < size; i++) {
-                TreeNode* front = q.front();
-                q.pop();
+           for(int i = 0; i<size; i++){
+               TreeNode* temp = q.front();
+               q.pop();
+               
+               if(i == size - 1){
+                   ans.push_back(temp -> val);
+               }
 
-                // Last node of the current level
-                if (i == size - 1) {
-                    ans.push_back(front->val);
-                }
+               if(temp -> left){
+                  q.push(temp -> left);
+               }
 
-                if (front->left) {
-                    q.push(front->left);
-                }
-
-                if (front->right) {
-                    q.push(front->right);
-                }
-            }
+               if(temp -> right){
+                  q.push(temp -> right);
+               }
+           }
         }
 
         return ans;
