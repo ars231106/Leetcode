@@ -11,29 +11,38 @@
  */
 class Solution {
 public:
-    string preorderq(TreeNode* q){
+    void preorderq(TreeNode* q, string &q_q){
         if(q == NULL){
-            return "N";
+            q_q = q_q + "N";
+            return;
         }
 
-        return to_string(q -> val) + preorderp(q -> left) + preorderp(q -> right);
+        q_q = q_q + to_string(q -> val);
+        preorderq(q -> left, q_q);
+        preorderq(q -> right, q_q);
     }
     
-    string preorderp(TreeNode* p){
+    void preorderp(TreeNode* p, string &p_p){
         if(p == NULL){
-            return "N";
+             p_p = p_p + "N";
+             return;
         }
 
-        return to_string(p -> val) + preorderp(p -> left) + preorderp(p -> right);
+        p_p = p_p + to_string(p -> val);
+        preorderp(p -> left, p_p);
+        preorderp(p -> right, p_p);
     }
 
     bool isSameTree(TreeNode* p, TreeNode* q) {
-        string p_p = preorderp(p);
-        string q_q = preorderq(q);
+        string q_q;
+        string p_p;
+
+        preorderp(p, p_p);
+        preorderq(q, q_q);
 
         if(p_p == q_q){
             return true;
-        } 
+        }
 
         return false;
     }
