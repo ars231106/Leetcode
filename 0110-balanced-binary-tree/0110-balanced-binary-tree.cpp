@@ -1,43 +1,25 @@
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right)
- *         : val(x), left(left), right(right) {}
- * };
- */
-
 class Solution {
 public:
-    int dfs(TreeNode* root) {
+    pair<int,int> dfs(TreeNode* root) {
         if(root == NULL) {
-            return 0;
+            return {0, 1};
         }
 
-        int left = dfs(root->left);
+        pair<int,int> left = dfs(root->left);
+        pair<int,int> right = dfs(root->right);
 
-        if(left == -1) {
-            return -1;
-        }
+        int height = 1 + max(left.first, right.first);
 
-        int right = dfs(root->right);
+        int balanced = left.second &&
+                       right.second &&
+                       abs(left.first - right.first) <= 1;
 
-        if(right == -1) {
-            return -1;
-        }
-
-        if(abs(left - right) > 1) {
-            return -1;
-        }
-
-        return 1 + max(left, right);
+        return {height, balanced};
     }
 
     bool isBalanced(TreeNode* root) {
-        return dfs(root) != -1;
+        pair<int,int> ans = dfs(root);
+
+        return ans.second;
     }
 };
