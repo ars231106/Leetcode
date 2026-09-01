@@ -6,44 +6,42 @@
  *     TreeNode *right;
  *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
  *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right)
- *         : val(x), left(left), right(right) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-
 class Solution {
 public:
     vector<int> rightSideView(TreeNode* root) {
-        vector<int> ans;
-
-        if (root == NULL) {
+        vector<int>ans;
+        if(root==nullptr)
+        {
             return ans;
         }
-
-        queue<TreeNode*> q;
+        queue<TreeNode*>q;
         q.push(root);
 
-        while (!q.empty()) {
-           int size = q.size();
+        while(!q.empty())
+        {
+            int size=q.size();
+            
+            for(int i=0;i<size;i++)
+            {
+                TreeNode* temp=q.front();
+                q.pop();
+                if(i==0) ans.push_back(temp->val);
 
-           for(int i = 0; i<size; i++){
-               TreeNode* temp = q.front();
-               q.pop();
-               
-               if(i == size - 1){
-                   ans.push_back(temp -> val);
-               }
+                if(temp->right!=nullptr)
+                {
+                    q.push(temp->right);
+                }
+                if(temp->left!=nullptr)
+                {
+                    q.push(temp->left);
+                }
+            }
 
-               if(temp -> left){
-                  q.push(temp -> left);
-               }
-
-               if(temp -> right){
-                  q.push(temp -> right);
-               }
-           }
+            
         }
-
         return ans;
     }
 };
