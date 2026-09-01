@@ -20,7 +20,7 @@ public:
 
         ltor.push(root);
 
-        while(!ltor.empty() || !rtol.empty()) {
+        while(!ltor.empty() || !rtol.empty()){
             vector<int> level;
 
             while(!ltor.empty()) {
@@ -29,15 +29,18 @@ public:
 
                 level.push_back(temp->val);
 
-                if(temp->left != NULL)
+                if(temp->left != NULL){
                     rtol.push(temp->left);
+                }
 
-                if(temp->right != NULL)
+                if(temp->right != NULL){
                     rtol.push(temp->right);
+                }
             }
 
-            if(!level.empty())
+            if(!level.empty()){
                 ans.push_back(level);
+            }
 
             level.clear();
 
@@ -47,15 +50,18 @@ public:
 
                 level.push_back(temp->val);
 
-                if(temp->right != NULL)
+                if(temp->right != NULL){
                     ltor.push(temp->right);
+                }
 
-                if(temp->left != NULL)
+                if(temp->left != NULL){
                     ltor.push(temp->left);
+                }
             }
 
-            if(!level.empty())
+            if(!level.empty()){
                 ans.push_back(level);
+            }
         }
 
         return ans;
