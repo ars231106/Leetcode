@@ -11,33 +11,44 @@
  */
 class Solution {
 public:
-    void dfs(TreeNode* root, int height, int &maxheight, int &value){
-        if(root == NULL){
-            return;
-        }
-
-        if(height > maxheight){
-            maxheight = height;
-            value = root -> val;
-        }
-
-        dfs(root -> left, height + 1, maxheight, value);
-        dfs(root -> right, height + 1, maxheight, value);
-
-
-    }
-
-    int findBottomLeftValue(TreeNode* root) {
-        int maxheight = -1;
-        int height = 0;
-
+    int height(TreeNode* root){
         if(root == NULL){
             return 0;
         }
 
-        int value = 0;
-        dfs(root, height, maxheight,value);
+        int left = height(root -> left);
+        int right = height(root -> right);
 
-        return value;
+        int height = 1 + max(left, right);
+        return height;
+    }
+
+  void dfs(TreeNode* root, int currdepth, int togodepth, int &ans, bool &found){
+    if(root == NULL || found){
+        return;
+    }
+
+    if(currdepth == togodepth){
+        ans = root->val;
+        found = true;
+        return;
+    }
+
+    dfs(root->left, currdepth + 1, togodepth, ans, found);
+    dfs(root->right, currdepth + 1, togodepth, ans, found);
+}
+
+    int findBottomLeftValue(TreeNode* root) {
+       if(root == NULL){
+           return 0; 
+       }
+
+       int h = height(root);
+       int togodepth = h - 1;
+       bool found = false;
+
+       int ans = 0;
+       dfs(root, 0, togodepth, ans, found);
+       return ans;
     }
 };
