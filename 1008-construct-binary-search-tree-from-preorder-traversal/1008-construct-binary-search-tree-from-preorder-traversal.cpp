@@ -11,28 +11,28 @@
  */
 class Solution {
 public:
-    TreeNode* helper(vector<int>& preorder, int& preidx, int left, int right) {
-        if(left > right || preidx >= preorder.size())
+    TreeNode* helperrecursive(vector<int>& preorder, int& preidx, int min, int max){
+        if(preidx == preorder.size()){
             return NULL;
-
-        int root = preorder[preidx];
-        TreeNode* newNode = new TreeNode(root);
-        preidx++;
-
-        int mid = preidx;
-
-        while(mid <= right && preorder[mid] < root) {
-            mid++;
         }
 
-        newNode->left = helper(preorder, preidx, preidx, mid - 1);
-        newNode->right = helper(preorder, preidx, mid, right);
+    int root = preorder[preidx];
 
-        return newNode;
+    if(root <= min || root >= max){
+        return NULL;
+    }
+
+    TreeNode* newNode = new TreeNode(root);
+    preidx++;
+
+    newNode->left = helperrecursive(preorder, preidx, min, root);
+    newNode->right = helperrecursive(preorder, preidx, root, max);
+
+    return newNode;
     }
 
     TreeNode* bstFromPreorder(vector<int>& preorder) {
         int preidx = 0;
-        return helper(preorder, preidx, 0, preorder.size() - 1);
+        return helperrecursive(preorder, preidx, INT_MIN, INT_MAX);
     }
 };
