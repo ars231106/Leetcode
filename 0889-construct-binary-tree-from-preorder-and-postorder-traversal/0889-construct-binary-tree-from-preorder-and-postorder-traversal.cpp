@@ -17,7 +17,7 @@ public:
                 return i;
             }
         }
-        return 0;
+        return -1;
     }
 
     TreeNode* recurssivehelper(vector<int>& preorder, vector<int>& postorder, int left, int right, int &preidx){
