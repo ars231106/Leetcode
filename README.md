@@ -117,6 +117,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0889-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/ars231106/Leetcode/tree/master/0889-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0912-sort-an-array](https://github.com/ars231106/Leetcode/tree/master/0912-sort-an-array) |
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/ars231106/Leetcode/tree/master/1008-construct-binary-search-tree-from-preorder-traversal) |
+| [4027-elevator-requests-iii](https://github.com/ars231106/Leetcode/tree/master/4027-elevator-requests-iii) |
 ## Hash Table
 |  |
 | ------- |
@@ -178,6 +179,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0509-fibonacci-number](https://github.com/ars231106/Leetcode/tree/master/0509-fibonacci-number) |
 | [0647-palindromic-substrings](https://github.com/ars231106/Leetcode/tree/master/0647-palindromic-substrings) |
 | [0746-min-cost-climbing-stairs](https://github.com/ars231106/Leetcode/tree/master/0746-min-cost-climbing-stairs) |
+| [4027-elevator-requests-iii](https://github.com/ars231106/Leetcode/tree/master/4027-elevator-requests-iii) |
 ## String
 |  |
 | ------- |
@@ -223,6 +225,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0078-subsets](https://github.com/ars231106/Leetcode/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/ars231106/Leetcode/tree/master/0090-subsets-ii) |
+| [4027-elevator-requests-iii](https://github.com/ars231106/Leetcode/tree/master/4027-elevator-requests-iii) |
 ## Linked List
 |  |
 | ------- |
@@ -324,6 +327,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0047-permutations-ii](https://github.com/ars231106/Leetcode/tree/master/0047-permutations-ii) |
 | [0912-sort-an-array](https://github.com/ars231106/Leetcode/tree/master/0912-sort-an-array) |
+| [4027-elevator-requests-iii](https://github.com/ars231106/Leetcode/tree/master/4027-elevator-requests-iii) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -358,4 +362,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0141-linked-list-cycle](https://github.com/ars231106/Leetcode/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/ars231106/Leetcode/tree/master/0142-linked-list-cycle-ii) |
+## Bitmask
+|  |
+| ------- |
+| [4027-elevator-requests-iii](https://github.com/ars231106/Leetcode/tree/master/4027-elevator-requests-iii) |
 <!---LeetCode Topics End-->
