@@ -192,6 +192,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0208-implement-trie-prefix-tree](https://github.com/ars231106/Leetcode/tree/master/0208-implement-trie-prefix-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/ars231106/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0647-palindromic-substrings](https://github.com/ars231106/Leetcode/tree/master/0647-palindromic-substrings) |
+| [4026-maximum-gap-between-stations](https://github.com/ars231106/Leetcode/tree/master/4026-maximum-gap-between-stations) |
 ## Design
 |  |
 | ------- |
@@ -257,6 +258,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0160-intersection-of-two-linked-lists](https://github.com/ars231106/Leetcode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0234-palindrome-linked-list](https://github.com/ars231106/Leetcode/tree/master/0234-palindrome-linked-list) |
 | [0647-palindromic-substrings](https://github.com/ars231106/Leetcode/tree/master/0647-palindromic-substrings) |
+| [4026-maximum-gap-between-stations](https://github.com/ars231106/Leetcode/tree/master/4026-maximum-gap-between-stations) |
 ## Math
 |  |
 | ------- |
@@ -313,6 +315,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0045-jump-game-ii](https://github.com/ars231106/Leetcode/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/ars231106/Leetcode/tree/master/0055-jump-game) |
 | [4025-minimize-the-maximum-waiting-time-at-synchronized-traffic-lights](https://github.com/ars231106/Leetcode/tree/master/4025-minimize-the-maximum-waiting-time-at-synchronized-traffic-lights) |
+| [4026-maximum-gap-between-stations](https://github.com/ars231106/Leetcode/tree/master/4026-maximum-gap-between-stations) |
 ## Recursion
 |  |
 | ------- |
