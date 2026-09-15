@@ -112,6 +112,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0090-subsets-ii](https://github.com/ars231106/Leetcode/tree/master/0090-subsets-ii) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/ars231106/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/ars231106/Leetcode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
+| [0204-count-primes](https://github.com/ars231106/Leetcode/tree/master/0204-count-primes) |
 | [0216-combination-sum-iii](https://github.com/ars231106/Leetcode/tree/master/0216-combination-sum-iii) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/ars231106/Leetcode/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/ars231106/Leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
@@ -276,6 +277,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0060-permutation-sequence](https://github.com/ars231106/Leetcode/tree/master/0060-permutation-sequence) |
 | [0062-unique-paths](https://github.com/ars231106/Leetcode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/ars231106/Leetcode/tree/master/0070-climbing-stairs) |
+| [0204-count-primes](https://github.com/ars231106/Leetcode/tree/master/0204-count-primes) |
 | [0509-fibonacci-number](https://github.com/ars231106/Leetcode/tree/master/0509-fibonacci-number) |
 ## Trie
 |  |
@@ -385,4 +387,24 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/ars231106/Leetcode/tree/master/0062-unique-paths) |
+## Enumeration
+|  |
+| ------- |
+| [0204-count-primes](https://github.com/ars231106/Leetcode/tree/master/0204-count-primes) |
+## Number Theory
+|  |
+| ------- |
+| [0204-count-primes](https://github.com/ars231106/Leetcode/tree/master/0204-count-primes) |
+## Primality Test
+|  |
+| ------- |
+| [0204-count-primes](https://github.com/ars231106/Leetcode/tree/master/0204-count-primes) |
+## Sieve Theory
+|  |
+| ------- |
+| [0204-count-primes](https://github.com/ars231106/Leetcode/tree/master/0204-count-primes) |
+## Prime Number Sieve
+|  |
+| ------- |
+| [0204-count-primes](https://github.com/ars231106/Leetcode/tree/master/0204-count-primes) |
 <!---LeetCode Topics End-->
