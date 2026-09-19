@@ -410,4 +410,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0204-count-primes](https://github.com/ars231106/Leetcode/tree/master/0204-count-primes) |
+## Algorithm X
+|  |
+| ------- |
+| [0051-n-queens](https://github.com/ars231106/Leetcode/tree/master/0051-n-queens) |
 <!---LeetCode Topics End-->
