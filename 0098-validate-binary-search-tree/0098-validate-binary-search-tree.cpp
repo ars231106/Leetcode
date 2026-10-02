@@ -11,24 +11,24 @@
  */
 class Solution {
 public:
-    void inorder_traversal(TreeNode* root, vector<int>& inorder){
-        if(root == NULL){
-            return;
-        }
-
-        inorder_traversal(root -> left, inorder);
-        inorder.push_back(root -> val);
-        inorder_traversal(root -> right, inorder);
-    }
+    TreeNode* prev = NULL;
 
     bool isValidBST(TreeNode* root) {
-        vector<int> inorder;
-        inorder_traversal(root, inorder);
+        if(root == NULL){
+            return true;
+        }
 
-        for(int i = 1; i<inorder.size(); i++){
-            if(inorder[i] <= inorder[i-1]){
-                return false;
-            }
+        if(!(isValidBST(root -> left))){
+            return false;
+        }
+
+        if(prev != NULL && prev -> val >= root -> val){
+            return false;
+        }
+        prev = root;
+
+        if(!(isValidBST(root -> right))){
+            return false;
         }
 
         return true;
