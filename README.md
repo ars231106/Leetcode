@@ -38,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0993-cousins-in-binary-tree](https://github.com/ars231106/Leetcode/tree/master/0993-cousins-in-binary-tree) |
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/ars231106/Leetcode/tree/master/1008-construct-binary-search-tree-from-preorder-traversal) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/ars231106/Leetcode/tree/master/1448-count-good-nodes-in-binary-tree) |
+| [2583-kth-largest-sum-in-a-binary-tree](https://github.com/ars231106/Leetcode/tree/master/2583-kth-largest-sum-in-a-binary-tree) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -102,6 +103,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0993-cousins-in-binary-tree](https://github.com/ars231106/Leetcode/tree/master/0993-cousins-in-binary-tree) |
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/ars231106/Leetcode/tree/master/1008-construct-binary-search-tree-from-preorder-traversal) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/ars231106/Leetcode/tree/master/1448-count-good-nodes-in-binary-tree) |
+| [2583-kth-largest-sum-in-a-binary-tree](https://github.com/ars231106/Leetcode/tree/master/2583-kth-largest-sum-in-a-binary-tree) |
 ## Array
 |  |
 | ------- |
@@ -165,6 +167,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/ars231106/Leetcode/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 | [0993-cousins-in-binary-tree](https://github.com/ars231106/Leetcode/tree/master/0993-cousins-in-binary-tree) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/ars231106/Leetcode/tree/master/1448-count-good-nodes-in-binary-tree) |
+| [2583-kth-largest-sum-in-a-binary-tree](https://github.com/ars231106/Leetcode/tree/master/2583-kth-largest-sum-in-a-binary-tree) |
 ## Binary Search Tree
 |  |
 | ------- |
@@ -361,6 +364,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0047-permutations-ii](https://github.com/ars231106/Leetcode/tree/master/0047-permutations-ii) |
 | [0912-sort-an-array](https://github.com/ars231106/Leetcode/tree/master/0912-sort-an-array) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/ars231106/Leetcode/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
+| [2583-kth-largest-sum-in-a-binary-tree](https://github.com/ars231106/Leetcode/tree/master/2583-kth-largest-sum-in-a-binary-tree) |
 | [4027-elevator-requests-iii](https://github.com/ars231106/Leetcode/tree/master/4027-elevator-requests-iii) |
 ## Heap (Priority Queue)
 |  |
