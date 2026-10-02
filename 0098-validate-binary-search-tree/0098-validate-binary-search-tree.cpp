@@ -1,39 +1,34 @@
-/* * Definition for a binary tree node. 
-* struct TreeNode { 
-* int val; 
-* TreeNode *left; 
-* TreeNode *right; 
-* TreeNode() : val(0), left(nullptr), right(nullptr) {} 
-* TreeNode(int x) : val(x), left(nullptr), right(nullptr) {} 
-* TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {} 
-* }; 
-*/
-
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
 class Solution {
 public:
-    // check through inorder traversal of a binary search tree (bcs in an inorder traversal of 
-    // a bst the prev val <= next val (always bcs in inorder you travere from left -> root ->  // right). This condition is only valid for inoder travesal of a "BST".)
-    
-    TreeNode* prev = NULL;
+    void inorder_traversal(TreeNode* root, vector<int>& inorder){
+        if(root == NULL){
+            return;
+        }
+
+        inorder_traversal(root -> left, inorder);
+        inorder.push_back(root -> val);
+        inorder_traversal(root -> right, inorder);
+    }
 
     bool isValidBST(TreeNode* root) {
+        vector<int> inorder;
+        inorder_traversal(root, inorder);
 
-        if(root == NULL){
-            return true;
-        }
-
-        if(!isValidBST(root->left)){
-            return false;
-        }
-
-        if(prev != NULL && root->val <= prev->val){
-            return false;
-        }
-
-        prev = root;
-
-        if(!isValidBST(root->right)){
-            return false;
+        for(int i = 1; i<inorder.size(); i++){
+            if(inorder[i] <= inorder[i-1]){
+                return false;
+            }
         }
 
         return true;
