@@ -11,29 +11,27 @@
  */
 class Solution {
 public:
-    TreeNode* arraytobst(vector<int>& nums, int left, int right){
+    TreeNode* arraytobst(vector<int>& nums, int left, int right, TreeNode*& root){
         if(left > right){
-            return NULL;
+            root = NULL;
+            return root;
         }
 
-        int mid = left + ((right - left) / 2);
+        int mid = left + (right - left) / 2;
 
-        TreeNode* newNode = new TreeNode(nums[mid]);
+        root = new TreeNode(nums[mid]);
 
-        newNode -> left = arraytobst(nums, left, mid - 1);
-        newNode -> right = arraytobst(nums, mid + 1, right);
+        arraytobst(nums, left, mid - 1, root->left);
+        arraytobst(nums, mid + 1, right, root->right);
 
-        return newNode;
-
+        return root;
     }
 
     TreeNode* sortedArrayToBST(vector<int>& nums) {
-        int left = 0;
-        int right = nums.size() - 1 ;
+        TreeNode* root = NULL;
 
-        TreeNode* result = arraytobst(nums, left, right);
+        arraytobst(nums, 0, nums.size() - 1, root);
 
-        return result;
-
+        return root;
     }
 };
