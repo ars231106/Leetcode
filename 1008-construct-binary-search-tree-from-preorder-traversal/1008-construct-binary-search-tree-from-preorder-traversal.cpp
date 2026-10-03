@@ -11,29 +11,26 @@
  */
 class Solution {
 public:
-    TreeNode* preordertobst(TreeNode* root, int target){
-        if(root == NULL){
-            TreeNode* newNode = new TreeNode(target);
-            return newNode;
+    TreeNode* preordertobst(TreeNode* root, vector<int>& preorder, int &i, int low, int high){
+        if(i == preorder.size() || preorder[i] < low || preorder[i] > high){
+            return NULL;
         }
 
-        if(target < root -> val){
-            root -> left = preordertobst(root -> left, target);
-        }
+        root = new TreeNode(preorder[i]);
+        i++;
 
-        else{
-            root -> right = preordertobst(root -> right, target);
-        }
+        root -> left = preordertobst(root -> left, preorder, i, low, root -> val);
+        root -> right = preordertobst(root -> right, preorder, i, root -> val, high);
 
         return root;
+
     }
 
     TreeNode* bstFromPreorder(vector<int>& preorder) {
         TreeNode* root = NULL;
-        for(int i = 0; i< preorder.size(); i++){
-           root = preordertobst(root, preorder[i]);
-        }
-
-        return root;
+        int i = 0;
+        
+        TreeNode* result = preordertobst(root, preorder, i, INT_MIN, INT_MAX);
+        return result;
     }
 };
