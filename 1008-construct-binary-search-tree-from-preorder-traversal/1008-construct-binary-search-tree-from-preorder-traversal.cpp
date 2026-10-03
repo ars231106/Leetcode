@@ -11,28 +11,29 @@
  */
 class Solution {
 public:
-    TreeNode* helperrecursive(vector<int>& preorder, int& preidx, int min, int max){
-        if(preidx == preorder.size()){
-            return NULL;
+    TreeNode* preordertobst(TreeNode* root, int target){
+        if(root == NULL){
+            TreeNode* newNode = new TreeNode(target);
+            return newNode;
         }
 
-    int root = preorder[preidx];
+        if(target < root -> val){
+            root -> left = preordertobst(root -> left, target);
+        }
 
-    if(root <= min || root >= max){
-        return NULL;
-    }
+        else{
+            root -> right = preordertobst(root -> right, target);
+        }
 
-    TreeNode* newNode = new TreeNode(root);
-    preidx++;
-
-    newNode->left = helperrecursive(preorder, preidx, min, root);
-    newNode->right = helperrecursive(preorder, preidx, root, max);
-
-    return newNode;
+        return root;
     }
 
     TreeNode* bstFromPreorder(vector<int>& preorder) {
-        int preidx = 0;
-        return helperrecursive(preorder, preidx, INT_MIN, INT_MAX);
+        TreeNode* root = NULL;
+        for(int i = 0; i< preorder.size(); i++){
+           root = preordertobst(root, preorder[i]);
+        }
+
+        return root;
     }
 };
