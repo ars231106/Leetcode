@@ -1,53 +1,27 @@
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
 class Solution {
 public:
-    void levelorder(TreeNode* root, bool &flag){
+    bool isCompleteTree(TreeNode* root) {
         queue<TreeNode*> q;
         q.push(root);
 
+        bool flag = false;
+
         while(!q.empty()){
-            int size = q.size();
-            vector<TreeNode*> level;
-            
-            for(int i = 0; i<size; i++){
-                TreeNode* temp = q.front();
-                q.pop();
+            TreeNode* temp = q.front();
+            q.pop();
 
-                level.push_back(temp);
-
-                if(temp != NULL){
-                    q.push(temp -> left);
-                    q.push(temp -> right);
-                }
+            if(temp == NULL){
+                flag = true;
             }
+            else{
+                if(flag)
+                    return false;
 
-            for(int i = 0; i<level.size(); i++){
-                if(level[i] == NULL){
-                    flag = true;
-                }
-
-                else if(flag == true){
-                    flag = false;
-                    return;
-                }
+                q.push(temp->left);
+                q.push(temp->right);
             }
         }
-    }
 
-    bool isCompleteTree(TreeNode* root) {
-        bool flag = false;
-        levelorder(root, flag);
-
-        return flag;
+        return true;
     }
 };
