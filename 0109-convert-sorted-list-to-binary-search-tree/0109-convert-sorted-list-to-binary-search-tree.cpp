@@ -21,7 +21,7 @@
  */
 class Solution {
 public:
-    TreeNode* helper(TreeNode* root, vector<int>& ans, int start, int end){
+    TreeNode* helper(TreeNode* &root, vector<int>& ans, int start, int end){
         if(start > end){
             return NULL;
         }
