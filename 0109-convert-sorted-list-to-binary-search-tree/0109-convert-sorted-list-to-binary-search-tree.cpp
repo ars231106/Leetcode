@@ -26,7 +26,7 @@ public:
             return NULL;
         }
 
-        int mid = start + (end - start) / 2;
+        int mid = start + (end - start + 1) / 2;
         root = new TreeNode(ans[mid]);
 
         root -> left = helper(root -> left, ans, start, mid - 1);
