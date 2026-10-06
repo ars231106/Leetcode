@@ -15,14 +15,24 @@ public:
             return NULL;
         }
 
-        if(p -> val < root -> val && q -> val < root -> val){
-            return lowestCommonAncestor(root -> left, p, q);
+        if(p == root || q == root){
+            return root;
         }
 
-        if(p -> val > root -> val && q -> val > root -> val){
-            return lowestCommonAncestor(root -> right, p , q);
+
+        TreeNode* leftLCA = lowestCommonAncestor(root -> left, p, q);
+        TreeNode* rightLCA = lowestCommonAncestor(root -> right, p, q);
+
+        if(leftLCA != NULL && rightLCA != NULL){
+            return root;
         }
 
-        return root;
+        else if(leftLCA == NULL && rightLCA != NULL){
+            return rightLCA;
+        }
+
+        else{
+            return leftLCA;
+        }
     }
 };
